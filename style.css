@@ -1,0 +1,449 @@
+*{
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+html {
+  scroll-behavior: smooth;
+}
+
+body{
+  font-family: cursive;
+  background-size: cover;
+  background-attachment: fixed;
+  background: linear-gradient(to right, #fa7070, #c6ebc5);
+}
+
+.navbar{
+  height: 70px;
+  width: 100%;
+  padding: 16px 30px;
+  background-color: #fa7070;
+  position: fixed;
+  box-shadow: 0px 1px 10px rgb(85, 84, 84);
+}
+
+.navbar .nav-header{
+  display: inline;
+
+}
+.navbar .nav-header .nav-logo{
+  display: inline-block;
+  margin-top: -7px;
+}
+
+.navbar .nav-links{
+  display: inline;
+  float: right;
+  font-size: 25px;
+}
+ 
+.navbar .nav-links .loginBtn{
+  display: inline-block;
+  padding: 3px 20px;
+  margin-left: 7px;
+  font-size: 25px;
+  color: #a1c298;
+}
+.navbar .nav-links a{
+  padding: 10px 12px;
+  text-decoration: none;
+  font-family: 'Pacifico', serif;
+  font-weight: 200;
+  color: white;
+}
+/* Hover effects */
+.navbar .nav-links a:hover{
+  background-color: #a1c298;
+}
+ 
+/* responsive navbar toggle button */
+.navbar #nav-check, .navbar .nav-btn{
+  display: none;
+}
+ 
+@media (max-width:700px) {
+  .navbar .nav-btn{
+    display: inline-block;
+    position: absolute;
+    top: 0px;
+    right: 0px;
+  }
+  .navbar .nav-btn label {
+    display: inline-block;
+    width: 80px;
+    height: 70px;
+    padding: 25px;
+  }
+  .navbar .nav-btn label span {
+    display: block;
+    height: 10px;
+    width: 25px;
+    border-top: 3px solid #eee;
+  }
+  .navbar .nav-btn label:hover, .navbar #nav-check:checked ~ .nav-btn label {
+    background-color: rgb(9, 14, 90);
+  }
+  .navbar .nav-links{
+    position: absolute;
+    display: block;
+    text-align: center;
+    width: 50%;
+    background-color: rgb(9, 14, 90);
+    transition: all 0.3s ease-in;
+    overflow-y: hidden;
+    top: 70px;
+    right: 0px;
+  }
+  .navbar .nav-links a {
+    display: block;
+  }
+ 
+  /* when nav toggle button not checked */
+  .navbar #nav-check:not(:checked) ~ .nav-links {
+    height: 0px;
+  }
+ 
+  /* when nav toggle button is checked */
+  .navbar #nav-check:checked ~ .nav-links {
+    height: calc(100vh - 70px);
+    overflow-y: auto;
+  }
+  .navbar .nav-links .loginBtn {
+    padding: 10px 40px ;
+    margin: 20px;
+    font-size:  18px;
+    font-weight: bold;
+    color: rgb(9, 14, 90);
+  }
+   
+ 
+}
+
+.headingra{
+  font-family: 'Comforter Brush', serif;
+  color: white;
+  text-align: center;
+  font-size: 50px;
+
+}
+
+.card {
+  box-sizing: border-box;
+  padding: 5px 5px 5px 5px;
+  background-color: rgba(255, 255, 255, 0.5);
+  border: 10px #31C5D7;
+  transition: width 2s, background-color 1s, box-shadow 1s;
+  border-radius: 10px;
+  color: black;
+  padding: 50px;
+}
+
+.card:hover {
+  box-shadow: 0 8px 8px 0 rgba(0, 0, 0, 0.2);
+  background-color: rgba(255, 255, 255, 1);
+}
+
+.wrapper {
+  justify-content: center;
+  display: flex;
+  flex-wrap: wrap;
+  
+}
+
+a {
+  text-decoration: none;
+}
+
+#button {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  flex-wrap: wrap;
+  background: linear-gradient(to right, #D74177, #FFE98A);
+  width: 100px;
+  border-radius: 10px;
+  color: white;
+  font-size: 20px;
+}
+
+#name {
+  font-size: 24px;
+}
+
+.card1 {
+  box-sizing: border-box;
+  padding: 5px 5px 5px 5px;
+  background-color: #a1c298;
+  border: 10px #31C5D7;
+  transition: width 2s, background-color 1s, box-shadow 1s;
+  
+  color: white;
+  padding: 50px;
+}
+.card2 {
+  box-sizing: border-box;
+  
+  background-color: #ffffff;
+  border: 10px #31C5D7;
+  transition: width 2s, background-color 1s, box-shadow 1s;
+  
+  color: black;
+  padding: 20px;
+}
+
+.card3 {
+  box-sizing: border-box;
+  padding: 5px 5px 5px 5px;
+  background-color: #fa7070;
+  border: 10px #31C5D7;
+  transition: width 2s, background-color 1s, box-shadow 1s;
+  
+  color: white;
+  padding: 50px;
+}
+
+.wrapper1 {
+  justify-content: center;
+  display: flex;
+  flex-wrap: wrap;
+}
+
+
+#name1 {
+  font-size: 35px;
+  font-family: 'Caveat', serif;
+}
+
+/*Floating Back-To-Top Button*/
+#myBtn {
+  position: fixed;
+  bottom: 10px;
+  float: right;
+  
+  left: 92%;
+  max-width: 100px;
+  width: 100%;
+  font-size: 25px;
+  border-color: white;
+  background-color:#fa7070;
+  padding: .5px;
+  border-radius: 10px;
+
+}
+/*On Hover Color Change*/
+#myBtn:hover {
+  background-color: #a1c298;
+}
+
+.footer-distributed{
+	background: #444;
+	box-shadow: 0 1px 1px 0 rgba(0, 0, 0, 0.12);
+	box-sizing: border-box;
+	width: 100%;
+	font: bold 16px sans-serif;
+	text-align: left;
+	padding: 50px 60px 40px;
+	overflow: hidden;
+}
+
+section {
+  width: 100%;
+  display: inline-block;
+  background: #ccc;
+  height: 60vh;
+  text-align: center;
+  font-size: 22px;
+  font-weight: 700;
+  text-decoration: underline;
+}
+
+
+/* Footer left */
+
+.footer-distributed .footer-left{
+	float: left;
+}
+
+/* The company logo */
+
+.footer-distributed h3{
+	color:  #ffffff;
+	font: normal 36px 'Roboto', cursive;
+	margin: 0 0 10px;
+}
+
+.footer-distributed h3 span{
+	color:  #5383d3;
+}
+
+/* Footer links */
+
+.footer-distributed .footer-links{
+	color:  #ffffff;
+	margin: 0 0 10px;
+	padding: 0;
+}
+
+.footer-distributed .footer-links a{
+	display:inline-block;
+	line-height: 1.8;
+	text-decoration: none;
+	color:  inherit;
+}
+
+.footer-distributed .footer-company-name{
+	color:  #8f9296;
+	font-size: 14px;
+	font-weight: normal;
+	margin: 0;
+}
+
+/* Footer social icons */
+
+.footer-distributed .footer-icons{
+	margin-top: 40px;
+}
+
+.footer-distributed .footer-icons a{
+	display: inline-block;
+	width: 35px;
+	height: 35px;
+	cursor: pointer;
+	background-color:  #33383b;
+	border-radius: 2px;
+
+	font-size: 20px;
+	color: #ffffff;
+	text-align: center;
+	line-height: 35px;
+
+	margin-right: 3px;
+	margin-bottom: 5px;
+}
+
+/* Footer Right */
+
+.footer-distributed .footer-right{
+	float: right;
+}
+
+.footer-distributed .footer-right p{
+	display: inline-block;
+	vertical-align: top;
+	margin: 15px 42px 0 0;
+	color: #ffffff;
+}
+
+/* The contact form */
+
+.footer-distributed form{
+	display: inline-block;
+}
+
+.footer-distributed form input,
+.footer-distributed form textarea{
+	display: block;
+	border-radius: 3px;
+	box-sizing: border-box;
+	background-color:  #1f2022;
+	box-shadow: 0 1px 0 0 rgba(255, 255, 255, 0.1);
+	border: none;
+	resize: none;
+
+	font: inherit;
+	font-size: 14px;
+	font-weight: normal;
+	color:  #d1d2d2;
+
+	width: 400px;
+	padding: 18px;
+}
+
+.footer-distributed ::-webkit-input-placeholder {
+	color:  #5c666b;
+}
+
+.footer-distributed ::-moz-placeholder {
+	color:  #5c666b;
+	opacity: 1;
+}
+
+.footer-distributed :-ms-input-placeholder{
+	color:  #5c666b;
+}
+
+
+.footer-distributed form input{
+	height: 55px;
+	margin-bottom: 15px;
+}
+
+.footer-distributed form textarea{
+	height: 100px;
+	margin-bottom: 20px;
+}
+
+.footer-distributed form button{
+	border-radius: 3px;
+	background-color:  #33383b;
+	color: #ffffff;
+	border: 0;
+	padding: 15px 50px;
+	font-weight: bold;
+	float: right;
+}
+
+/* If you don't want the footer to be responsive, remove these media queries */
+
+@media (max-width: 1000px) {
+
+	.footer-distributed {
+		font: bold 14px sans-serif;
+	}
+
+	.footer-distributed .footer-company-name{
+		font-size: 12px;
+	}
+
+	.footer-distributed form input,
+	.footer-distributed form textarea{
+		width: 250px;
+	}
+
+	.footer-distributed form button{
+		padding: 10px 35px;
+	}
+
+}
+
+@media (max-width: 800px) {
+
+	.footer-distributed{
+		padding: 30px;
+	}
+
+	.footer-distributed .footer-left,
+	.footer-distributed .footer-right{
+		float: none;
+		max-width: 300px;
+		margin: 0 auto;
+	}
+
+	.footer-distributed .footer-left{
+		margin-bottom: 40px;
+	}
+
+	.footer-distributed form{
+		margin-top: 30px;
+	}
+
+	.footer-distributed form{
+		display: block;
+	}
+
+	.footer-distributed form button{
+		float: none;
+	}
+}
