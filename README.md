@@ -50,4 +50,4 @@ If you would like to contribute to this project, please follow these steps:
 
 ## Contact Information
 
-Created by [Daksh Varshney](https://dakshvarshney1409.github.io) - feel free to contact me!
+Created by [Daksh Varshney](https://github.com/DakshVarshney1409) - feel free to contact me!
