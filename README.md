@@ -7,9 +7,7 @@ This repository contains the code for a website built using HTML and CSS as a le
 - [Installation](#installation)
 - [Usage](#usage)
 - [Contributing](#contributing)
-- [License](#license)
 - [Contact Information](#contact-information)
-- [Acknowledgements](#acknowledgements)
 
 ## Installation
 
@@ -49,3 +47,7 @@ If you would like to contribute to this project, please follow these steps:
   4. Commit your changes (git commit -am 'Add new feature').
   5. Push to the branch (git push origin feature-branch).
   6. Create a new Pull Request.
+
+## Contact Information
+
+Created by [Daksh Varshney](https://dakshvarshney1409.github.io) - feel free to contact me!
